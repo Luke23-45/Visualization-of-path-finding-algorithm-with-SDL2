@@ -13,24 +13,23 @@ Ensure you have the following installed:
 
 ## Project Structure
 
--  `colorfull_ball.cc`: Main C++ source file containing the simulation logic and rendering.
+-  `warehourse_robot.cc`: Main C++ source file containing the simulation logic and rendering.
 -  `Makefile`: Build script for compiling the project.
 -  `src/`: Source code directory (currently not utilized for separate source and headers, but included in template for potential expansion).
-    *   `include/`:  Intended for header files (currently not used).
-    *   `lib/`: Intended for SDL related libraries (currently not used as SDL is assumed to be installed system-wide).
+    *   `include/`:  Header files
 
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone git@github.com:Luke23-45/Colorfull-Ball-with-Particle-Effect-Animation.git
+    git clone git@github.com:Luke23-45/Visualization-of-path-finding-algorithm-with-SDL2.git
     ```
 ## Building
 
 This project uses `make` for building. To build the project, run the following command in your terminal:
 
-2. Navigate to the project directory:
+1. Navigate to the project directory:
     ```bash
-    cd Colorfull-Ball-with-Particle-Effect-Animation
+    cd Visualization-of-path-finding-algorithm-with-SDL2
     ```
 3. Compile the code:
     ```bash
@@ -38,12 +37,12 @@ This project uses `make` for building. To build the project, run the following c
     ```
 4. Run the executable:
     ```bash
-    ./colorfull_ball
+    ./main
     ```
 
 5. In window (if Makefile produces `main.exe` for windows, otherwise use the executable name from Makefile, likely `colorfull_ball.exe` or similar):
     ```bash
-    colorfull_ball.exe
+    main.exe
     ```
 6. To clean up the build artifacts
     ```bash
@@ -76,7 +75,7 @@ This project uses `make` for building. To build the project, run the following c
 ## Code Structure
 The project is primarily contained within the `colorfull_ball.cc` file, which includes all the source code for the simulation.
 
-- **`colorfull_ball.cc`**: This file serves as the main source file and encompasses:
+- **`warehourse_robot.cc`**: This file serves as the main source file and encompasses:
     - **SDL Initialization and Setup**: Functions `initSDL()` and `destroySDL()` handle the initialization and cleanup of SDL2, including window, renderer, and font systems.
     - **Rendering Functions**:  Functions like `renderGrid()`, `renderObstacles()`, `renderRobot()`, `renderDestination()`, `renderPath()`, `renderText()`, and `renderInstructions()` are responsible for drawing different elements of the simulation on the screen using SDL2 rendering API.
     - **Pathfinding Algorithms**:  Implements both Breadth-First Search (BFS) in `findPath()` and A* search algorithm in `findPathA()` to calculate paths for the robot.
@@ -85,7 +84,6 @@ The project is primarily contained within the `colorfull_ball.cc` file, which in
     - **File I/O**: Functions `saveLayout()` and `loadLayout()` handle saving and loading the obstacle layout to and from text files.
     - **`main()` Function**: The entry point of the program, containing the main simulation loop, event handling, game logic updates, and rendering calls.
 
-The code is structured in a single file for simplicity, suitable for a small project, with functions logically separated to manage different aspects of the simulation like rendering, pathfinding, and user interaction.
 
 
 ## Demo Video
