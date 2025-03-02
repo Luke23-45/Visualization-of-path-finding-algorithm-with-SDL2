@@ -1,4 +1,4 @@
-Automated Warehouse Robot Simulation
+# Automated Warehouse Robot Simulation
 
 This project is a C++ based simulation using SDL2 library to visualize a robot navigating a warehouse grid. Users can interactively define obstacles on the grid, set a destination for the robot, and observe the robot find a path using either Breadth-First Search (BFS) or A* pathfinding algorithm. The simulation visually represents the grid, obstacles, robot, calculated path, and provides real-time instructions. It also supports saving and loading warehouse layouts to and from files.
 
