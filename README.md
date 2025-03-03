@@ -87,7 +87,7 @@ The project is primarily contained within the `colorfull_ball.cc` file, which in
 
 
 ## Demo Video
-Check out the project demo video on YouTube: https://www.youtube.com/watch?v=McOcbGHyAWA
+Check out the project demo video on YouTube: https://youtu.be/HDTzYFRzg50
 ## License
 
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code.
